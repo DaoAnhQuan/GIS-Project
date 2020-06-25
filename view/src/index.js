@@ -3,7 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { IgrDataChartInteractivityModule } from 'igniteui-react-charts';
+import { IgrGeographicMapModule } from 'igniteui-react-maps';
 
+IgrGeographicMapModule.register();
+IgrDataChartInteractivityModule.register();
 ReactDOM.render(
   <React.StrictMode>
     <App />
