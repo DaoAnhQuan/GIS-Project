@@ -211,12 +211,12 @@ class FindPath extends React.Component{
                         y:point[1]
                     })
                 }
-                this.addPolyLine(lineData,"rgba(2,248,27,0.9)");
+                this.addPolyLine(lineData,"rgba(239,8,56,0.9)");
             }
             for (let route of foot){
-                this.addPolyLine(route,"rgba(248,2,23,0.9)");
+                this.addPolyLine(route,"rgba(27,248,2,0.9)");
             }
-            this.addSymbols(stations,"rgba(2,248,27,0.9)");
+            this.addSymbols(stations,"rgba(239,8,56,0.9)");
             this.props.geoMap.zoomToGeographic({left:minLon,top:maxLat,width:maxLon-minLon,height:maxLat-minLat});
         }).catch(err=>{
             console.log(err);
